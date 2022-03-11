@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Welcome to my list!</h1>
+    <ul>
+        {% for name in my_list %}
+            {% if name == "Demarcus Ware" %}
+                <li><b>{{ name }}</b></li>
+            {% else %}
+                <li>{{ name }}</li>
+            {% endif %}
+        {% endfor %}
+
+
+    </ul>
+
+
+{% endblock content %}
